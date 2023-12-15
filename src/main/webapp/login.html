@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Login/Sign Up</title>
+	<!HTML Tutorial (referenced) W3Schools, 26 Nov. 2023, https://www.w3schools.com/html/>
+    <! "how to link fonts given link in html" prompt (5 lines) ChatGPT 3 Aug. version, OpenAI, 26 Nov. 2023, chat.openai.com/chat.>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+	<div class="page">
+		<div class="toppage">
+			<a class="JoesTable" href="home.html">JoesTable!</p>
+			<a class="topbar" href="home.html">Home</a>
+			<a class="topbar" href="login.html">Login / Sign Up</a>
+		</div>
+		<div class="forms">
+			<div class="loginform">
+				<p class="logintitle">Login</p>
+				<form method="POST" id="Login">
+					<p class="error" id="loginerror"></p>
+					<div class="inp">
+						<label for="username">Username:</label>
+						<input class="txtbox" type="text" id="username" name="username" required>
+					</div>
+					<div class="inp">
+						<label for="password">Password:</label>
+						<!input class="txtbox" type="text" id="password" name="password" required>
+						<input class="txtbox" type="password" id="password" name="password" required>
+					</div>
+					<div class="inp">
+						<input class="button" type="submit" value="Sign In">
+					</div>
+				</form>
+			</div>
+			<div class="signupform">
+				<p class="sutitle">Sign Up</p>
+				<form method="POST" id="SignUp">
+					<p class="error" id="signuperrorU"></p>
+					<p class="error" id="signuperrorE"></p>
+					<p class="error" id="signuperrorP"></p>
+					<div class="inp">
+						<label for="email">Email:</label>
+						<!input type="text" id="email" name="email" required>
+						<!switch when done testing>
+						<input class="txtbox" type="email" id="email" name="email" required>
+					</div>
+					
+					
+					<div class="inp">
+						<label for="usernameS">Username:</label>
+						<input class="txtbox" type="text" id="usernameS" name="usernameS" required>
+					</div>
+					
+					<div class="inp">
+						<label for="password1">Password:</label>
+						<!input class="txtbox" type="text" id="password1" name="password1" required>
+						<input class="txtbox" type="password" id="password1" name="password1" required>
+					</div>
+					
+					
+					<div class="inp">
+						<label for="password2">Confirm Password:</label>
+						<!input class="txtbox" type="text" id="password2" name="password2" required>
+						<input class="txtbox" type="password" id="password2" name="password2" required>
+					</div>
+					
+					<div class="inp">
+						<input type="checkbox" id="terms" name="terms" required>
+						<label for="terms">I have read and agree to all terms and Conditions of JoesTable.</label>
+					</div>
+					
+					<!div class="inp">
+						<input class="button" type="submit" value="Create Account">
+					<!/div>
+					
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="login.js"></script>
+</body>
+</html>
